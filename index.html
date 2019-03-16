@@ -1,84 +1,246 @@
-<html>
-<head>
-<title> Little Blog </title>
-      <link href="mycss.css" rel="stylesheet" type="text/css">
-	  <style>
-  body {
-   background-image: url(bg3.gif);
-  }
-  table, th, td {
-				border: 2px solid #3f4042;
+<! Doctype HTML>
+<html lang="en">
+	<head> 
+		<title> Welcome, Strangers! </title> 
+		<meta charset="utf-8"/>
+		<style> 
+			body {
+				background-image: url("img/background.png");
+				font-family: "Helvetica", "arial";
+				margin: 0;
+				padding: 0;
+				}
+			#wrapper { 
+				width: 1000px;
+				height: auto;
+				background: #edecea;
+				border-left: 5px solid #a0a09f;
+				border-right: 5px solid #a0a09f;
+				border-bottom: 5px solid #a0a09f;
+				overflow: auto;
+				margin: auto;
+				}
+			#header {
+				width: 1000px;
+				height: 353px;
+				border-bottom: 3px solid  #a0a09f;
+				}
+			#logo {
+				float: Center;
+				}
+			#sidebar {
+				float: Left;
+				width: 275px;
+				height: 100%;
+				}
+			#social {
+				float: center;
+				margin: 20px 30px 0px 0px;
+				}
+			#social ul li {
+				float: center;
+				paddling-right: 5px;
+				}
+			#social img{
+				height: 40px;
+				width: 40px;
+				}
+			#menu ul{
+				float: left;
+				height:auto;
+				width:200px;
+				}
+			#menu ul li{
+				padding: 5px;
+				text-align: center;
+				}
+			#menu ul li a{
+				background: #cccccc;
+				color: #6b6c6d;
+				text-decoration: none;
+				padding: 10px 0px;
+				display: block;
+				}
+			#menu ul li a:hover {
+				color: #fff;
+				}
+			#content {
+				float: left;
+				width: 655px;
+				height: auto;
+				padding-left: 15px;
+				letter-spacing: 1;
+				color:#6b6c6d;
+				border-left: 3px solid #a0a09f;
+				} 
+			h3 {
+				text-align: center;
+				padding: 5px;
+				border-bottom: 1px solid #a0a09f;
+				}
+			p {
+				text-indent: 50px;
+				line-height: 25px;
+				}
+			#content img{
+				float: right;
+				padding: 0px 0px 5px 5px;
+				}
+			table, th, td {
+				border: 1px solid #fff;
 				border-collapse: collapse;
-		}
-	
-	td a{
-			text-decoration: Thicker;
-			color: white;
+				}
+			tr:hover {
+				background-color: #b5cdf4;
+				}
+			iframe{
+				margin-left:55px;
+				}
+			#slideShowImages { 
+				border: 1px gray solid;
+				background-color: lightgray;
+				}   
+			#slideShowImages img { 
+				float: center;
+				border: 0.8em black solid;
+				padding: 3px;
+				}   
+		</style>	
+	</head>
+	<body link="#646e7f">
+	<div id="wrapper">
+		<div id= "header">
+			<a name="top"></a>
+			<div id="Logo" >
+				<img src="img/mlogo.png" align="center" width="1000" alt="logo" title="Chesya's Personal Blog">
+			</div><!---logo selesai--->
+		</div> <!---header selesai--->  
+			<div id="sidebar"> 
+				<div id="menu">
+					<ul type="none">
+						<li> <h5><a href="#Home"> Home </a> </h5> </li>
+						<li> <h5><a href="#Music"> Music </a> </h5> </li>
+						<li> <h5><a href="#Schedule"> College Schedule </a> </h5> </li>
+						<li> <h5><a href="#AboutMe"> About Me </a> </h5></li>
+						<li> <h5><a href="#Gallery"> Gallery </a></h5> </li>
+					</ul>
+				</div> <!---menu selesai--->
+			</div><!---sidebar selesai--->
+		<div id="content">
+			<a name="home"> <h3> This blog</h3>
+				<img src="img/home.jpg" width="350" height="280" alt="home" title="Well, I dont know who she is. But the pic so aethetic so.."/>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 			
-		}
-	 
-    </style>
-	    
-</head>
+			<a name="Music"> <h3> Songs I Recommend</h3>
+				<img src="img/giphy.gif" width="350" height="280" alt="Music" title="Enjoy this record loop"/>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<br><br> <b> Song on this blog:</b> That Place - Tay Oskee. <br> Similar Songs I recommend: Roo Panes - Tiger Striped Sky, The Lumineers - Ho Hey </p>
+			
+			<a name="schedule"> <h3> My College Schedule</h3>
+				<p align="center"> This is my schedule of the week for my college class.  </p>
+				<table border="1" align="Center" background="img/sch.jpg">
+					<tr>
+						<td colspan="4" align="center" bgcolor="#7a7a7a"><font color="#e3e4e5"> <H2> S c h e d u l e </H2> </td>
+					</tr>
+					<tr>
+						<td bgcolor="#a0a09f"> <font Color="#e8e8e8"> <b> Day </b> </td>
+						<td bgcolor="#a0a09f"> <font Color="#e8e8e8"> <b> Time </b> </td>
+						<td bgcolor="#a0a09f"> <font Color="#e8e8e8"> <b> Class </b> </td>
+						<td bgcolor="#a0a09f"> <font Color="#e8e8e8"> <b> Room </b> </td>
+					</tr>
+					<tr>
+						<td rowspan="3"><font color="#6b6c6d"> Monday </td>
+						<td> <font color="#6b6c6d">8:00-9:40 </td>
+						<td> <font color="#6b6c6d">Lorem </td>
+						<td> <font color="#6b6c6d">206 </td>
+					</tr>
+					<tr>
+						<td> <font color="#6b6c6d">10:30-12:10 </td>
+						<td> <font color="#6b6c6d">Ipsum </td>
+						<td> <font color="#6b6c6d">404 </td>
+					</tr>
+					<tr>
+						<td> <font color="#6b6c6d">14:35-15:30 </td>
+						<td> <font color="#6b6c6d">Lorem ipsum </td>
+						<td> <font color="#6b6c6d">305 </td>
+					</tr>
+					<tr>
+						<td rowspan="3"><font color="#6b6c6d"> Tuesday </td>
+						<td> <font color="#6b6c6d">8:00-10:30 </td>
+						<td> <font color="#6b6c6d">Lorem ipsum </td>
+						<td> <font color="#6b6c6d">305 </td>
+					</tr>
+					<tr>
+						<td> <font color="#6b6c6d">10:30-13:00 </td>
+						<td> <font color="#6b6c6d">Lorem dolor ipsum </td>
+						<td> <font color="#6b6c6d">101 </td>
+					</tr>
+					<tr>
+						<td> <font color="#6b6c6d">14:35-16:15 </td>
+						<td> <font color="#6b6c6d">Dolor ipsum</td>
+						<td> <font color="#6b6c6d">503 </td>
+					</tr>
+					<tr>
+						<td rowspan="3"><font color="#6b6c6d"> Wednesday </td>
+						<td> <font color="#6b6c6d">8:00-9:40 </td>
+						<td> <font color="#6b6c6d">Ipsum dolor</td>
+						<td> <font color="#6b6c6d">103 </td>
+					</tr>
+					<tr>
+						<td> <font color="#6b6c6d">10:30-12:10 </td>
+						<td> <font color="#6b6c6d">Lorem dolor ipsum dolor</td>
+						<td> <font color="#6b6c6d">402 </td>
+					</tr>
+					<tr>
+						<td> <font color="#6b6c6d">12:35-14:15 </td>
+						<td> <font color="#6b6c6d">Lorem ipsum dolor </td>
+						<td> <font color="#6b6c6d">407 </td>
+					</tr>
+					<tr>
+						<td> <font color="#6b6c6d">Thursday </td>
+						<td> <font color="#6b6c6d">8:00-9:40 </td>
+						<td> <font color="#6b6c6d">Dolor ipsum lorem</td>
+						<td> <font color="#6b6c6d">209 </td>
+					</tr>
+					<tr>
+						<td> <font color="#6b6c6d">Friday </td>
+						<td> <font color="#6b6c6d">11:00-12:40 </td>
+						<td> <font color="#6b6c6d">Ipsum Lorem ipsum </td>
+						<td> <font color="#6b6c6d">506</td>
+					</tr>
+				</table>
+				<div class="top"><h4><a href="#top">Go To The Top</a></h4></div>
+			
+			<a name="aboutme"> <h3> About the Owner</h3>
+				<img src="img/me.jpg" width="190" height="250" alt="aboutme" title="Hi, this is me."/>
+				<p> Hi, I'm Che! A student at Darma Persada University. I take computer science as my major and currently on my 6th semester. I got an internship at Ministry of Communication and Information Technology on this very semester too. I paint and do some urban sketch if I dont do any coding. I love food, a lot and love to make them as well (I bake when I'm sad). I do yoga on 9 p.m and do some reading in the middle of the night. Have major obsession on tv series too. Basically a big nerd, cool one though! </p>
+					<div class="top"><h4><a href="#top">Go To The Top</a></h4></div>
 
-<body>
-<center>
-<br>
-<br>
-<hr width ="60%" color="white">
-<br>
-<hr width ="60%" color="white">
-<br>
-<hr width ="60%" color="white">
-<br>
-<hr width ="60%" color="white">
-<br>
-<br>
-<table border = "3" width="50px" height="50px" align="center" cellpadding="10">
-<tr>
-	<td colspan="2" align="center" height=100px background="bc2.png" > <h1 class="customfont2" style="color:white"> <b> Little Blog </h1> </b> </td>
-</tr>
-<tr>
-     <td>  <div class="hovereffect">
-        <img class="img-resxponsive" src="gambar1.jpeg" width="300px" height="300px" alt="">
-            <div class="overlay">
-                <h2>my face ew</h2>
-            </div>
-		</div>
-		</div>
-	</td>
-	  <td class="bg1">  <div width="300px" height="300px">
-                <h2>About Me</h2>
-				<p> 
-					I'm Chesya Pricilla, student at Darma Persada university. 
-				</p> 
-            </div>
-		</div>
-		</div>
-	</td>
-</tr>
-<tr>
-	  <td class="bg1">  <div  width="300px" height="300px">
-                <h2>What I do</h2>
-				<p> 
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis ac libero consectetur congue. Aliquam pellentesque tellus eu erat imperdiet, vitae feugiat tortor fringilla. 
-				</p> 
-            </div>
-		</div>
-		</div>
-	</td>
+			<a name="gallery"> <h3> Aesthetic Photographs</h3>
+				<div id="slideShowImages">
+					<img src="img/slide1.jpg" alt="Slide 1" />
+					<img src="img/slide2.jpg" alt="Slide 2" />
+					<img src="img/slide3.jpg" alt="Slide 3" />    
+					<img src="img/slide4.jpg" alt="Slide 4" />
+				</div>  
+ 
+  <script src="slideShow.js"></script>
+		</div> <!---content selesai--->
+	</div> <!---wrapper hanya sampai sini--->
+		<div align="center" id="social"> <h4 style="color:6b6c6d" align="center" font-family="Helvetica"> Reach Me Out </h4>
+				<ul type="none">
+					<li><a href="http://www.facebook.com/" target="_blank" > <img src="img/lgfacebook.jpg" alt="facebook" title="My Facebook"> </a>
+						<a href="http://www.tumblr.com" target="_blank" > <img src="img/lgtumblr.jpg" alt="Tumblr" title="Follow me on Tumblr"> </a>
+						<a href="http://www.instagram.com/" target="_blank" > <img src="img/lginstagram.jpg" alt="instagram" title="Follow me on Instagram"> </a> 
+						<a href="http://chesyapricilla@gmail.com" target="_blank" > <img src="img/lgemail.jpg" alt="myemail" title="Mail me"> </a> </li>
+				</ul>
+		</div> <!---social selesai--->	
+<p class="copyright" align="center" style="color:bbbcbf">© 2019 Brigitta Chesya Pricilla.</a></p>
 
+<!--- music --->
+		<audio controls autoplay style="display:none;" onloadeddata="setHalfVolume()" >
+			<source src="songs/thatplace.mp3" type="audio/mpeg">
+		</audio>
 
-	   <td>  <div class="hovereffect">
-        <img class="img-responsive" src="gambar2.jpeg" width="300px" height="300px" alt="">
-            <div class="overlay">
-                <h2>Me and my bestfriend</h2>
-				 
-            </div>
-		</div>
-		</div>
-	</td>
-</tr>
-</center>
-</body>
+	</body>
+
 </html>
